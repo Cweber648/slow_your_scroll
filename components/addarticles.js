@@ -177,17 +177,17 @@ const styles = StyleSheet.create({
     // textAlign: 'center',
     fontSize: 20,
     color: '#fff',
-    // fontFamily: 'Montserrat',
+    fontFamily: 'Montserrat',
     fontStyle: 'italic',
     fontWeight: '400'
     // fontWeight: 'bold'
   },
   slowyourFont: {
-    // fontFamily: 'Montserrat',
+    fontFamily: 'Montserrat',
     fontWeight: '200',
   },
   textinput: {
-    // fontFamily: 'Montserrat',
+    fontFamily: 'Montserrat',
     fontStyle: 'italic',
     fontSize: 17,
     alignSelf: 'stretch',
@@ -205,7 +205,7 @@ const styles = StyleSheet.create({
     fontWeight: '300',
     paddingBottom: 10,
     marginBottom: 20,
-    // fontFamily: 'Montserrat',
+    fontFamily: 'Montserrat',
     lineHeight: 44,
   },
   urlform: {
