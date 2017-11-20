@@ -30,12 +30,15 @@ export default class AddArticles extends Component {
     const { navigate } = this.props.navigation;
     return (
       <View style={styles.container}>
-
-        <View style={styles.imageview}><Image style={styles.image} source={require('../images/rain.jpg')}/></View>
+        <View style={styles.imageview}><Image style={styles.image} resizeMode='cover' source={require('../images/rain.jpg')}/></View>
         <View style={styles.overlay}>
+        <ScrollView>
           <View style={styles.urlform}>
-            <Text style={styles.slowyour}>slow your</Text>
-            <Text style={styles.title}>S C R O L L</Text>
+
+            <TouchableOpacity style={styles.aboutButton} onPress={() => navigate('About')}>
+              <Text style={styles.slowyour}>slow your</Text>
+              <Text style={styles.title}>S C R O L L</Text>
+            </TouchableOpacity>
 
             <ScrollView  horizontal={true} style={styles.iconheader}>
               <TouchableOpacity onPress={() => Linking.openURL('https://www.nytimes.com/')}>
@@ -84,6 +87,7 @@ export default class AddArticles extends Component {
               <Text style={styles.buttonText}>View List</Text>
             </TouchableOpacity>
           </View>
+          </ScrollView>
         </View>
       </View>
     );
@@ -128,6 +132,15 @@ export default class AddArticles extends Component {
 }
 
 const styles = StyleSheet.create({
+  aboutButton: {
+    backgroundColor: 'rgba(222, 228, 237, 0.15)',
+    borderRadius: 10,
+  },
+  aboutButtonText: {
+    color: 'white',
+    fontWeight: '300',
+    fontSize: 20,
+  },
   button: {
     alignSelf: 'stretch',
     alignItems: 'center',
@@ -155,6 +168,9 @@ const styles = StyleSheet.create({
   },
   image: {
     flex: 1,
+    alignSelf: 'stretch',
+    height: undefined,
+    width: undefined,
   },
   imageview: {
     position: 'absolute',
