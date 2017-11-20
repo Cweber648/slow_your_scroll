@@ -1,0 +1,3 @@
+rootProject.name = 'slow_your_scroll'
+
+include ':app'
