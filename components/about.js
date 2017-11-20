@@ -23,7 +23,7 @@ export default class About extends Component {
             <Text style={styles.title}>S C R O L L</Text>
             <Text style={styles.aboutText}>Slow Your Screen is a Dev Bootcamp final project created by Eric Chiang, Matthew Black, Charlie Weber, and Michelle Di Biase.</Text>
             <Text/>
-            <Text style={styles.aboutText}>The background photo is Sad Days by Vincent Tsai.</Text>
+            <Text style={styles.aboutText}>The background photo is by Gabriel Diwald.</Text>
           </View>
           </ScrollView>
         </View>
