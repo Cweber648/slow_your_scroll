@@ -15,7 +15,7 @@ export default class About extends Component {
     const { navigate } = this.props.navigation;
     return (
       <View style={styles.container}>
-        <View style={styles.imageview}><Image style={styles.image} source={require('../images/rain.jpg')}/></View>
+        <View style={styles.imageview}><Image style={styles.image} source={require('../images/rains.jpg')}/></View>
         <View style={styles.overlay}>
         <ScrollView>
           <View style={styles.urlform}>

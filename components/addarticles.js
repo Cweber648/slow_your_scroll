@@ -30,7 +30,7 @@ export default class AddArticles extends Component {
     const { navigate } = this.props.navigation;
     return (
       <View style={styles.container}>
-        <View style={styles.imageview}><Image style={styles.image} resizeMode='cover' source={require('../images/rain.jpg')}/></View>
+        <View style={styles.imageview}><Image resizeMode='cover' style={styles.image} source={require('../images/rains.jpg')}/></View>
         <View style={styles.overlay}>
         <ScrollView>
           <View style={styles.urlform}>
@@ -168,15 +168,12 @@ const styles = StyleSheet.create({
   },
   image: {
     flex: 1,
-    alignSelf: 'stretch',
-    height: undefined,
-    width: undefined,
   },
   imageview: {
     position: 'absolute',
     top: 0,
     left: 0,
-    width: '100%',
+    // width: '100%',
     height: '100%',
   },
   newsicons: {
