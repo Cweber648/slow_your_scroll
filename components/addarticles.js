@@ -35,7 +35,7 @@ export default class AddArticles extends Component {
         <ScrollView>
           <View style={styles.urlform}>
 
-            <TouchableOpacity style={styles.aboutButton} onPress={() => navigate('About')}>
+            <TouchableOpacity onPress={() => navigate('About')}>
               <Text style={styles.slowyour}>slow your</Text>
               <Text style={styles.title}>S C R O L L</Text>
             </TouchableOpacity>
@@ -132,15 +132,6 @@ export default class AddArticles extends Component {
 }
 
 const styles = StyleSheet.create({
-  aboutButton: {
-    backgroundColor: 'rgba(222, 228, 237, 0.15)',
-    borderRadius: 10,
-  },
-  aboutButtonText: {
-    color: 'white',
-    fontWeight: '300',
-    fontSize: 20,
-  },
   button: {
     alignSelf: 'stretch',
     alignItems: 'center',

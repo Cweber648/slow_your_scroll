@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Image, ScrollView, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
+import { Image, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { StackNavigator } from 'react-navigation';
 
 export default class About extends Component {
@@ -23,7 +23,7 @@ export default class About extends Component {
             <Text style={styles.title}>S C R O L L</Text>
             <Text style={styles.aboutText}>Slow Your Screen is a Dev Bootcamp final project created by Eric Chiang, Matthew Black, Charlie Weber, and Michelle Di Biase.</Text>
             <Text/>
-            <Text style={styles.aboutText}>The background photo is by Gabriel Diwald.</Text>
+            <Text style={styles.aboutText}>The original background photo is by Gabriele Diwald on Unsplash.</Text>
           </View>
           </ScrollView>
         </View>
